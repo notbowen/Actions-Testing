@@ -16,7 +16,7 @@ jobs:
             fetch-depth: 0
 
         - name: VulnGuard Scan
-          uses: DakshRocks21/VulnGuard@main
+          uses: DakshRocks21/VulnGuard@adcffa1fc7562e738df509c33d6cf9f15fe13d64
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
