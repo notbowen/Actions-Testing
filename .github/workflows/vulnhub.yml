@@ -12,5 +12,11 @@ jobs:
         - name: Checkout code
           uses: actions/checkout@v2
 
+        - name: Debug
+          run: |
+            ls -la
+            ls -la /
+            pwd
+
         - name: VulnGuard Scan
           uses: DakshRocks21/VulnGuard@main
