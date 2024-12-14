@@ -16,14 +16,3 @@ jobs:
           uses: DakshRocks21/VulnGuard@main
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-        - name: VulnGuard Scan
-          uses: DakshRocks21/VulnGuard@main
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-        - name: Debug
-          run: |
-            ls -la
-            ls -la /
-            pwd
