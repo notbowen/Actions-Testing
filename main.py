@@ -17,8 +17,13 @@ def login():
         return 'Login failed!'
 
 def login_helper(username: str, password: str):
-    # Check if the username and password are correct
-    if username == 'admin' and password == 'password':
+    user_pairs = {
+        'admin': 'password',
+        'user1': 'password1',
+        'user2': 'password2'
+    }
+
+    if username in user_pairs and user_pairs[username] == password:
         return True
     else:
         return False
