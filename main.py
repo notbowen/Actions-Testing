@@ -20,6 +20,7 @@ def login_helper(username: str, password: str):
     user_pairs = {
         'admin': 'password',
         'user1': 'password1',
+        'user2': 'password2',
     }
 
     if username in user_pairs and user_pairs[username] == password:
