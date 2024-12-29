@@ -27,5 +27,6 @@ def login_helper(username: str, password: str):
     else:
         return False
 
+
 if __name__ == '__main__':
     app.run(debug=True)
