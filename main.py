@@ -17,11 +17,17 @@ def login():
         return 'Login failed!'
 
 def login_helper(username: str, password: str):
-    # Check if the username and password are correct
-    if username == 'admin' and password == 'password':
+    # Dictionary of valid users and their passwords
+    users = {
+        'admin': 'password',
+        'user1': 'pass123',
+        'user2': 'secret'
+    }
+    
+    # Check if username exists and password matches
+    if username in users and users[username] == password:
         return True
-    else:
-        return False
+    return False
 
 if __name__ == '__main__':
     app.run(debug=True)
